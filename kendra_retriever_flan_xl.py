@@ -10,13 +10,13 @@ import streamlit as st
 
 
 def build_chain():
-    region = os.environ["AWS_REGION"]
-    kendra_index_id = os.environ["KENDRA_INDEX_ID"]
-    endpoint_name = os.environ["FLAN_XL_ENDPOINT"]
+#    region = os.environ["AWS_REGION"]
+#    kendra_index_id = os.environ["KENDRA_INDEX_ID"]
+#    endpoint_name = os.environ["FLAN_XL_ENDPOINT"]
 
-#    region = st.secrets["AWS_REGION"]
-#    kendra_index_id = st.secrets["KENDRA_INDEX_ID"]
-#    endpoint_name = st.secrets["FLAN_XL_ENDPOINT"]
+    region = st.secrets.default.AWS_REGION
+    kendra_index_id = st.secrets.default.KENDRA_INDEX_ID
+    endpoint_name = st.secrets.default.FLAN_XL_ENDPOINT
 
     class ContentHandler(ContentHandlerBase):
         content_type = "application/json"
