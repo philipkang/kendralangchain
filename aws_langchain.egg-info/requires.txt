@@ -1,0 +1,13 @@
+langchain==0.0.137
+boto3
+html2text
+
+[dev]
+openai
+anthropic
+streamlit
+
+[samples]
+openai
+anthropic
+streamlit
