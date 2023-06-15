@@ -78,11 +78,9 @@ def write_top_bar():
     with col1:
         st.image(AI_ICON, use_column_width='always')
     with col2:
-        selected_provider = sys.argv[1]
-        if selected_provider in PROVIDER_MAP:
+
             provider = PROVIDER_MAP[selected_provider]
-        else:
-            provider = selected_provider.capitalize()
+
         header = f"Private knowledgebase powered by Amazon Kendra and {provider}!"
         st.write(f"<h3 class='main-header'>{header}</h3>", unsafe_allow_html=True)
     with col3:
