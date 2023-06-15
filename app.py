@@ -79,9 +79,7 @@ def write_top_bar():
         st.image(AI_ICON, use_column_width='always')
     with col2:
 
-        provider = PROVIDER_MAP[selected_provider]
-
-        header = f"Private knowledgebase powered by Amazon Kendra and {provider}!"
+        header = f"Private knowledgebase powered by Amazon Kendra and Flan XL!"
         st.write(f"<h3 class='main-header'>{header}</h3>", unsafe_allow_html=True)
     with col3:
         clear = st.button("Clear Chat")
