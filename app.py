@@ -2,10 +2,7 @@ import streamlit as st
 import uuid
 import sys
 
-import kendra_chat_anthropic as anthropic
 import kendra_chat_flan_xl as flanxl
-import kendra_chat_flan_xxl as flanxxl
-import kendra_chat_open_ai as openai
 
 
 USER_ICON = "images/user-icon.png"
