@@ -13,9 +13,9 @@ PROVIDER_MAP = {
     'flanxl': 'Flan XL'
 }
 
-region = st.secrets["AWS_REGION"]
-kendra_index_id = st.secrets["KENDRA_INDEX_ID"]
-endpoint_name = st.secrets["FLAN_XL_ENDPOINT"]
+#region = st.secrets["AWS_REGION"]
+#kendra_index_id = st.secrets["KENDRA_INDEX_ID"]
+#endpoint_name = st.secrets["FLAN_XL_ENDPOINT"]
 
 # Check if the user ID is already stored in the session state
 if 'user_id' in st.session_state:
