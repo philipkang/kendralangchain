@@ -1,6 +1,7 @@
 import streamlit as st
 import uuid
 import sys
+import os
 
 import kendra_chat_flan_xl as flanxl
 
